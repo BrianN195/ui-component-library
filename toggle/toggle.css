@@ -1,0 +1,26 @@
+.toggle-on{
+    width: 3vw;
+    height: 2vh;
+    border-radius: 40%;
+    border: none;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.toggle-off{
+    width: 3vw;
+    height: 2vh;
+    border-radius: 40%;
+    border: none;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.toggle{
+    height: 2.3vh;
+    aspect-ratio: 1;
+    background-color: black;
+    border-radius: 50%;
+}
