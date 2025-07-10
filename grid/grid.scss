@@ -1,0 +1,48 @@
+$gridbackground: red;
+$gridone: blue;
+$gridtwo: green;
+$gridthree: yellow;
+$gridfour: black;
+$gridfive: violet;
+$gridheight: 100vh;
+$gridwidth: 100vw;
+
+.grid-container{
+    width: $gridwidth;
+    height: $gridheight;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-auto-rows: minmax(200px auto);
+    grid-auto-columns: minmax(200px auto);
+    row-gap: 3px;
+    column-gap: 3px;
+    grid-template-areas:
+    // . steht für pause
+    "one . two four four"
+    "one . two . ."
+    "one . three . five"
+    "one . three . five"
+    "one . three . five";
+    background-color: $gridbackground;
+    .grid-place-one{
+        grid-area: one;
+        background-color: $gridone;
+    }
+    .grid-place-two{
+        grid-area: two;
+        background-color: $gridtwo;
+    }
+    .grid-place-three{
+        grid-area: three;
+        background-color: $gridthree;
+    }
+    .grid-place-four{
+        grid-area: four;
+        background-color: $gridfour;
+    }
+    .grid-place-five{
+        grid-area: five;
+        background-color: $gridfive;
+    }
+}

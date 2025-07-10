@@ -1,0 +1,35 @@
+.grid-container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-auto-rows: minmax(200px auto);
+  grid-auto-columns: minmax(200px auto);
+  row-gap: 3px;
+  column-gap: 3px;
+  grid-template-areas: "one . two four four" "one . two . ." "one . three . five" "one . three . five" "one . three . five";
+  background-color: red;
+}
+.grid-container .grid-place-one {
+  grid-area: one;
+  background-color: blue;
+}
+.grid-container .grid-place-two {
+  grid-area: two;
+  background-color: green;
+}
+.grid-container .grid-place-three {
+  grid-area: three;
+  background-color: yellow;
+}
+.grid-container .grid-place-four {
+  grid-area: four;
+  background-color: black;
+}
+.grid-container .grid-place-five {
+  grid-area: five;
+  background-color: violet;
+}
+
+/*# sourceMappingURL=grid.css.map */
