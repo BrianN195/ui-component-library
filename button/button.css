@@ -1,0 +1,10 @@
+button{
+    padding: 0.5rem 1rem;
+    Border: 2px solid black;
+    border-radius: 10px;
+    /* % bei Radius besser für Kreise als Rechtecke */
+}
+button:hover{
+    color: white;
+    background-color: black;
+}
